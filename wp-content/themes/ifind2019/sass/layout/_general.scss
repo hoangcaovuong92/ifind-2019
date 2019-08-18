@@ -1,0 +1,70 @@
+body {
+    color: #ffffff;
+    font-family: Lato, cursive;
+    font-weight: 500;
+    max-width: 1080px;
+    width: 100%;
+    max-height: 1920px;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    // Disabled keyboard
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #06334F none repeat scroll 0 0;
+    // background-image: url(assets/images/header-bg.png);
+    // background-repeat: repeat;
+    // background-size: auto 75%;
+    //background: radial-gradient(#fff 1%, #057893 99%) no-repeat;
+    //overflow: hidden;
+}
+
+// Scroll bar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color:#B03C3F;
+    border-radius:10px;
+    &:hover{
+        background-color:#BF4649;
+        border:1px solid #333333;
+    }
+    &:active{
+        background-color:#A6393D;
+        border:1px solid #333333;
+    } 
+}
+
+.ifind-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    &.ifind-section-flex {
+        @include flexbox;
+        @include flex-wrap(wrap);
+    }
+
+    .ifind-col {
+        margin-bottom: 10px;
+        text-align: left;
+        z-index: 10;
+    }
+    .ifind-col-right {
+        text-align: center;
+    }
+}

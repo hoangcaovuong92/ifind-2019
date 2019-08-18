@@ -1,0 +1,120 @@
+/* Email form */
+.send-statistics-mail-form{
+    position: sticky;
+    bottom: 0;
+    background: #ffffff;
+    border: 3px dashed #000;
+}
+
+.send-statistics-mail-form img{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 100px;
+}
+
+.ifind-loading-icon{
+    display: none;
+}
+
+.send-statistics-mail-form table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.send-statistics-mail-form a{
+    font-weight: bold;
+}
+
+.send-statistics-mail-form .send-statistics-mail-form-input-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.send-statistics-mail-form .send-statistics-mail-form-input-wrap input{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.send-statistics-mail-form .send-statistics-mail-form-input-wrap span{
+    white-space: nowrap;
+}
+
+.send-statistics-mail-form table th, .send-statistics-mail-form table td{
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* Result form */
+.ifind-section{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.ifind-table-wrap{
+    overflow-x:auto;
+}
+.ifind-main-title{
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+}
+
+.ifind-subtitle{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.ifind-desc{
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+table.ifind-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.ifind-horizontal-table tr td:first-child{
+    font-weight: bold;
+    text-align: right;
+}
+
+.ifind-statistics-item-no{
+    font-weight: bold;
+}
+
+table.ifind-table th{
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: #4CAF50;
+    border: 1px solid #ddd;
+    color: white;
+}
+table.ifind-table td{
+    border: 1px solid #ddd;
+}
+table.ifind-table tr:nth-child(even){background-color: #F1F1F1;}
+
+table.ifind-table tr:hover {background-color: #ddd;}
+
+table.ifind-table{
+    font-size: 14px;
+}
+table.ifind-table th{
+    padding: 12px 8px;
+}
+table.ifind-table td{
+    padding: 8px;
+}
