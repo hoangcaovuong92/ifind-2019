@@ -15,7 +15,7 @@ if( !function_exists('ifind_get_weather_today_api') ){
 		* package: weather
 		* var: api_key 		
 		*/
-		extract(tvlgiao_wpdance_get_data_package( 'weather' )); 
+		extract(wd_get_data_package( 'weather' )); 
 		$response = wp_remote_get( "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lng&appid=$api_key&units=metric" );
 		$body = '';
 		if ( is_array( $response ) ) {
@@ -323,26 +323,26 @@ if(!function_exists ('ifind_get_metadata')){
 }
 
 // HTML before main content
-add_action('tvlgiao_wpdance_before_main_content','tvlgiao_wpdance_content_before_main_content',10);
-if(!function_exists ('tvlgiao_wpdance_content_before_main_content')){
-	function tvlgiao_wpdance_content_before_main_content(){ ?>
+add_action('wd_before_main_content','wd_content_before_main_content',10);
+if(!function_exists ('wd_content_before_main_content')){
+	function wd_content_before_main_content(){ ?>
 		<div id="main-content" class="main-content">
 	<?php 
 	}
 }
 
 // HTML after main content
-add_action('tvlgiao_wpdance_after_main_content','tvlgiao_wpdance_content_after_main_content',10);
-if(!function_exists ('tvlgiao_wpdance_content_after_main_content')){
-	function tvlgiao_wpdance_content_after_main_content(){ ?>
+add_action('wd_after_main_content','wd_content_after_main_content',10);
+if(!function_exists ('wd_content_after_main_content')){
+	function wd_content_after_main_content(){ ?>
 		</div><!-- End main-content -->
 	<?php 
 	}
 }
 
 // Get global data
-if(!function_exists ('tvlgiao_wpdance_get_post_by_global')){
-	function tvlgiao_wpdance_get_post_by_global(){
+if(!function_exists ('wd_get_post_by_global')){
+	function wd_get_post_by_global(){
 		global $post;
 		if ($post) {
 			return $post->ID;
@@ -353,8 +353,8 @@ if(!function_exists ('tvlgiao_wpdance_get_post_by_global')){
 
 // Tablet and mobile device detection
 // Source : https://mobiforge.com/design-development/tablet-and-mobile-device-detection-php
-if(!function_exists ('tvlgiao_wpdance_is_mobile_or_tablet')){
-	function tvlgiao_wpdance_is_mobile_or_tablet() {
+if(!function_exists ('wd_is_mobile_or_tablet')){
+	function wd_is_mobile_or_tablet() {
 		$tablet_browser = 0;
 		$mobile_browser = 0;
 		
@@ -408,8 +408,8 @@ if(!function_exists ('tvlgiao_wpdance_is_mobile_or_tablet')){
 }
 
 // Minify CSS
-if ( ! function_exists( 'tvlgiao_wpdance_minify_css' ) ) {
-	function tvlgiao_wpdance_minify_css( $content ) {
+if ( ! function_exists( 'wd_minify_css' ) ) {
+	function wd_minify_css( $content ) {
 	    $content = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $content);
 	    $content = str_replace(["\r\n","\r","\n","\t",'  ','    ','     '], '', $content);
 	    $content = preg_replace(['(( )+{)','({( )+)'], '{', $content);
@@ -420,8 +420,8 @@ if ( ! function_exists( 'tvlgiao_wpdance_minify_css' ) ) {
 }
 
 // Minify JS
-if ( ! function_exists( 'tvlgiao_wpdance_minify_js' ) ) {
-	function tvlgiao_wpdance_minify_js( $content ) {
+if ( ! function_exists( 'wd_minify_js' ) ) {
+	function wd_minify_js( $content ) {
 	    $content = preg_replace("/((?:\/\*(?:[^*]|(?:\*+[^*\/]))*\*+\/)|(?:\/\/.*))/", "", $content);
 	    $content = str_replace(["\r\n","\r","\t","\n",'  ','    ','     '], '', $content);
 	    $content = preg_replace(['(( )+\))','(\)( )+)'], ')', $content);
@@ -430,8 +430,8 @@ if ( ! function_exists( 'tvlgiao_wpdance_minify_js' ) ) {
 }
 
 /* Get array post name (autocomplete search) */
-if(!function_exists ('tvlgiao_wpdance_get_array_post_name')){
-	function tvlgiao_wpdance_get_array_post_name($post_type = 'post', $json = true, $ppp = -1){ 
+if(!function_exists ('wd_get_array_post_name')){
+	function wd_get_array_post_name($post_type = 'post', $json = true, $ppp = -1){ 
 		$args 			= array(
 			'post_type'			=> $post_type,
 			'posts_per_page'	=> $ppp,
@@ -448,8 +448,8 @@ if(!function_exists ('tvlgiao_wpdance_get_array_post_name')){
 }  
 
 /* Get current URL */
-if(!function_exists ('tvlgiao_wpdance_get_current_url')){
-	function tvlgiao_wpdance_get_current_url(){ 
+if(!function_exists ('wd_get_current_url')){
+	function wd_get_current_url(){ 
 		$current_url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 		$current_url = htmlspecialchars( $current_url, ENT_QUOTES, 'UTF-8' );
 		$current_url = explode('?', $current_url);

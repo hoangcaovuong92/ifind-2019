@@ -10,7 +10,7 @@
 
 
     // This is your option name where all the Redux data is stored.
-    $opt_name = "tvlgiao_wpdance_theme_options";
+    $opt_name = "wd_theme_options";
 
     // This line is only for altering the demo. Can be easily removed.
     $opt_name = apply_filters( 'redux_demo/opt_name', $opt_name );
@@ -22,12 +22,13 @@
      */
     
     /* DATA SETTING */ 
-    $wd_default_data    = tvlgiao_wpdance_get_theme_option_default_data();
+    $wd_default_data    = wd_get_theme_option_default_data();
 
     /****************************************************************/
     //Theme option Parts
     $wd_theme_option_parts = array(
-        'general'
+        'general',
+        'slider'
     );
 
     //Include demo data

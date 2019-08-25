@@ -14,16 +14,22 @@
 <?php get_header(); ?>
 <?php 
 /**
- * tvlgiao_wpdance_before_main_content hook.
+ * wd_before_main_content hook.
  *
- * @hooked tvlgiao_wpdance_content_before_main_content
+ * @hooked wd_content_before_main_content
  */
-do_action('tvlgiao_wpdance_before_main_content'); ?>
+do_action('wd_before_main_content'); ?>
 <div class="ifind-homepage">
 <?php
     $args = array(
-        'post_type'			=> 'location',
-        'post_status'		=> 'publish',
+        'post_type' => 'page',
+        'posts_per_page' => -1,
+        'meta_query' => array(
+            array(
+                'key' => '_wp_page_template',
+                'value' => 'templates/ifind_2019.php'
+            )
+        )
     );
     $data = new WP_Query($args);
     if( $data->have_posts() ){
@@ -41,10 +47,10 @@ do_action('tvlgiao_wpdance_before_main_content'); ?>
 </div>
 <?php 
 /**
- * tvlgiao_wpdance_after_main_content hook.
+ * wd_after_main_content hook.
  *
- * @hooked tvlgiao_wpdance_content_after_main_content
+ * @hooked wd_content_after_main_content
  */
-do_action('tvlgiao_wpdance_after_main_content'); ?>
+do_action('wd_after_main_content'); ?>
 
 <?php get_footer(); ?>

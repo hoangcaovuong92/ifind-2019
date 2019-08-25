@@ -18,11 +18,18 @@ jQuery(document).ready(function ($) {
 	ifind_ajax_display_weather_today_info();
 	ifind_ajax_auto_reload_browser();
 	ifind_ajax_update_business_click_counter();
+	ifind_tooltip();
 });
 
 //****************************************************************//
 /*							FUNCTIONS							  */
 //****************************************************************//
+if (typeof ifind_tooltip != 'function') { 
+	function ifind_tooltip(){
+		jQuery('[data-toggle="tooltip"]').tooltip();
+	}
+}
+
 if (typeof ifind_debug_mode != 'function') {
 	function ifind_debug_mode(mess) {
 		var debug = false;
@@ -708,7 +715,7 @@ if (typeof ifind_ajax_auto_reload_browser != 'function') {
 
 if (typeof ifind_add_class_to_body != 'function') {
 	function ifind_add_class_to_body() {
-		jQuery('body').addClass('loaded');
+		jQuery('body').addClass('wd-loaded');
 		setTimeout(() => {
 			jQuery('.header-page-name').trigger('click');
 		}, 3000);

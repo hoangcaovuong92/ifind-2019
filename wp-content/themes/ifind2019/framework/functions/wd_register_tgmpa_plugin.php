@@ -1,7 +1,7 @@
 <?php
-if(!function_exists ('tvlgiao_wpdance_register_tgmpa_plugin')){
-    function tvlgiao_wpdance_register_tgmpa_plugin(){
-        $tvlgiao_wpdance_plugins = array(
+if(!function_exists ('wd_register_tgmpa_plugin')){
+    function wd_register_tgmpa_plugin(){
+        $wd_plugins = array(
             array(
                 'name'                  => esc_html__('ACF Pro', 'feellio'), // The plugin name
                 'desc'                  => '', // The plugin description
@@ -47,12 +47,38 @@ if(!function_exists ('tvlgiao_wpdance_register_tgmpa_plugin')){
                 'external_url'          => '', // If set, overrides default API URL and points to an external URL
             ),
             array(
+                'name'                  => esc_html__('WP Smushit', 'feellio'), // The plugin name
+                'desc'                  => '', // The plugin description
+                'slug'                  => 'wp-smushit', // The plugin slug (typically the folder name)
+                'source'                => WD_THEME_PLUGIN . '/wp-smushit.zip', // The plugin source
+                'required'              => true, // If false, the plugin is only 'recommended' instead of required
+                'version'               => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+                'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+                'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+                'external_url'          => '', // If set, overrides default API URL and points to an external URL
+            ),
+            array(
+                'name'                  => esc_html__('Classic Editor', 'ifind'), // The plugin name
+                'slug'                  => 'classic-editor', // The plugin slug (typically the folder name)
+                'required'              => true, // If false, the plugin is only 'recommended' instead of required
+            ),
+            array(
+                'name'                  => esc_html__('User Role Editor', 'ifind'), // The plugin name
+                'slug'                  => 'user-role-editor', // The plugin slug (typically the folder name)
+                'required'              => true, // If false, the plugin is only 'recommended' instead of required
+            ),
+            array(
                 'name'                  => esc_html__('Redux Framework', 'ifind'), // The plugin name
                 'slug'                  => 'redux-framework', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
             ),
+            array(
+                'name'                  => esc_html__('Duplicate Post', 'ifind'), // The plugin name
+                'slug'                  => 'duplicate-post', // The plugin slug (typically the folder name)
+                'required'              => true, // If false, the plugin is only 'recommended' instead of required
+            ),
         ); //End plugins
-        $tvlgiao_wpdance_config = array(
+        $wd_config = array(
             'default_path'      => '',
             'menu'              => 'tgmpa-install-plugins',
             'has_notices'       => true,
@@ -81,9 +107,9 @@ if(!function_exists ('tvlgiao_wpdance_register_tgmpa_plugin')){
                 'nag_type'                          => 'updated'
             )
         );
-        tgmpa($tvlgiao_wpdance_plugins, $tvlgiao_wpdance_config);
+        tgmpa($wd_plugins, $wd_config);
     }
 }
 //Register Tgmpa Plugin
-add_action('tgmpa_register', 'tvlgiao_wpdance_register_tgmpa_plugin');
+add_action('tgmpa_register', 'wd_register_tgmpa_plugin');
 ?>

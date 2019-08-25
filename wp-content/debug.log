@@ -1,0 +1,185 @@
+[24-Aug-2019 07:18:39 UTC] PHP Notice:  Undefined index: button_url in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 98
+[24-Aug-2019 07:18:39 UTC] PHP Stack trace:
+[24-Aug-2019 07:18:39 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:18:39 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:18:39 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:18:39 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:18:39 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:18:39 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:18:39 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:18:39 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:18:39 UTC] PHP Notice:  Undefined index: button_title in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 98
+[24-Aug-2019 07:18:39 UTC] PHP Stack trace:
+[24-Aug-2019 07:18:39 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:18:39 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:18:39 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:18:39 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:18:39 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:18:39 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:18:39 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:18:39 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:18:39 UTC] PHP Notice:  Undefined index: content in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 102
+[24-Aug-2019 07:18:39 UTC] PHP Stack trace:
+[24-Aug-2019 07:18:39 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:18:39 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:18:39 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:18:39 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:18:39 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:18:39 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:18:39 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:18:39 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:18:39 UTC] PHP Notice:  Undefined index: content in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 112
+[24-Aug-2019 07:18:39 UTC] PHP Stack trace:
+[24-Aug-2019 07:18:39 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:18:39 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:18:39 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:18:39 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:18:39 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:18:39 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:18:39 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:18:39 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:18:39 UTC] PHP Notice:  Undefined index: image in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 118
+[24-Aug-2019 07:18:39 UTC] PHP Stack trace:
+[24-Aug-2019 07:18:39 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:18:39 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:18:39 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:18:39 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:18:39 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:18:39 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:18:39 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:18:39 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:18:39 UTC] PHP Notice:  Undefined index: status in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 89
+[24-Aug-2019 07:18:39 UTC] PHP Stack trace:
+[24-Aug-2019 07:18:39 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:18:39 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:18:39 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:18:39 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:18:39 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:18:39 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:18:39 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:18:39 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:24:54 UTC] PHP Notice:  Undefined index: background in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 111
+[24-Aug-2019 07:24:54 UTC] PHP Stack trace:
+[24-Aug-2019 07:24:54 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:24:54 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:24:54 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:24:54 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:24:54 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:24:54 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:24:54 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:24:54 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:26:06 UTC] PHP Notice:  Undefined index: background in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 111
+[24-Aug-2019 07:26:06 UTC] PHP Stack trace:
+[24-Aug-2019 07:26:06 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:26:06 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:26:06 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:26:06 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:26:06 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:26:06 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:26:06 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:26:06 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:27:14 UTC] PHP Notice:  Undefined index: background in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 111
+[24-Aug-2019 07:27:14 UTC] PHP Stack trace:
+[24-Aug-2019 07:27:14 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:27:14 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:27:14 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:27:14 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:27:14 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:27:14 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:27:14 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:27:14 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 07:27:30 UTC] PHP Notice:  Undefined index: background in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 111
+[24-Aug-2019 07:27:30 UTC] PHP Stack trace:
+[24-Aug-2019 07:27:30 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[24-Aug-2019 07:27:30 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[24-Aug-2019 07:27:30 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[24-Aug-2019 07:27:30 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[24-Aug-2019 07:27:30 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[24-Aug-2019 07:27:30 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[24-Aug-2019 07:27:30 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[24-Aug-2019 07:27:30 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[24-Aug-2019 08:42:05 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 116
+[24-Aug-2019 08:42:05 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 116
+[24-Aug-2019 08:42:10 UTC] PHP Parse error:  syntax error, unexpected '<' in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 108
+[25-Aug-2019 10:19:37 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ']' in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 140
+[25-Aug-2019 10:19:41 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ']' in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 140
+[25-Aug-2019 10:47:21 UTC] PHP Notice:  Undefined index: url in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 128
+[25-Aug-2019 10:47:21 UTC] PHP Stack trace:
+[25-Aug-2019 10:47:21 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:47:21 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:47:21 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:47:21 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:47:21 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:47:21 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:47:21 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:47:21 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:47:21 UTC] PHP Notice:  Undefined index: url in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 128
+[25-Aug-2019 10:47:21 UTC] PHP Stack trace:
+[25-Aug-2019 10:47:21 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:47:21 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:47:21 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:47:21 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:47:21 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:47:21 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:47:21 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:47:21 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:57:17 UTC] PHP Notice:  Undefined index: time-open in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 133
+[25-Aug-2019 10:57:17 UTC] PHP Stack trace:
+[25-Aug-2019 10:57:17 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:57:17 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:57:17 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:57:17 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:57:17 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:57:17 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:57:17 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:57:17 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:57:17 UTC] PHP Notice:  Undefined index: short-description in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 138
+[25-Aug-2019 10:57:17 UTC] PHP Stack trace:
+[25-Aug-2019 10:57:17 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:57:17 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:57:17 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:57:17 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:57:17 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:57:17 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:57:17 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:57:17 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:57:17 UTC] PHP Notice:  Undefined index: time-open in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 133
+[25-Aug-2019 10:57:17 UTC] PHP Stack trace:
+[25-Aug-2019 10:57:17 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:57:17 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:57:17 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:57:17 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:57:17 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:57:17 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:57:17 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:57:17 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:57:17 UTC] PHP Notice:  Undefined index: short-description in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 138
+[25-Aug-2019 10:57:17 UTC] PHP Stack trace:
+[25-Aug-2019 10:57:17 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:57:17 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:57:17 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:57:17 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:57:17 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:57:17 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:57:17 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:57:17 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:57:37 UTC] PHP Notice:  Undefined index: short-description in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 138
+[25-Aug-2019 10:57:37 UTC] PHP Stack trace:
+[25-Aug-2019 10:57:37 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:57:37 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:57:37 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:57:37 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:57:37 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:57:37 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:57:37 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:57:37 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286
+[25-Aug-2019 10:57:37 UTC] PHP Notice:  Undefined index: short-description in D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\framework\functions\ifind_2019\manager.php on line 138
+[25-Aug-2019 10:57:37 UTC] PHP Stack trace:
+[25-Aug-2019 10:57:37 UTC] PHP   1. {main}() D:\wamp64\www\wordpress\ifind-2019\index.php:0
+[25-Aug-2019 10:57:37 UTC] PHP   2. require() D:\wamp64\www\wordpress\ifind-2019\index.php:17
+[25-Aug-2019 10:57:37 UTC] PHP   3. require_once() D:\wamp64\www\wordpress\ifind-2019\wp-blog-header.php:19
+[25-Aug-2019 10:57:37 UTC] PHP   4. include() D:\wamp64\www\wordpress\ifind-2019\wp-includes\template-loader.php:78
+[25-Aug-2019 10:57:37 UTC] PHP   5. do_action() D:\wamp64\www\wordpress\ifind-2019\wp-content\themes\ifind2019\templates\ifind_2019.php:18
+[25-Aug-2019 10:57:37 UTC] PHP   6. WP_Hook->do_action() D:\wamp64\www\wordpress\ifind-2019\wp-includes\plugin.php:465
+[25-Aug-2019 10:57:37 UTC] PHP   7. WP_Hook->apply_filters() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:310
+[25-Aug-2019 10:57:37 UTC] PHP   8. iFind2019_Content->main_content() D:\wamp64\www\wordpress\ifind-2019\wp-includes\class-wp-hook.php:286

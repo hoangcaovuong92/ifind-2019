@@ -10,17 +10,19 @@
 <body <?php body_class(); ?>>
 <div class="body-wrapper">
 <header id="header" class="header">
-	<div id="loader-wrapper">
-		<div id="loader">
-			<div id="circularG">
-				<div id="circularG_1" class="circularG"></div>
-				<div id="circularG_2" class="circularG"></div>
-				<div id="circularG_3" class="circularG"></div>
-				<div id="circularG_4" class="circularG"></div>
-				<div id="circularG_5" class="circularG"></div>
-				<div id="circularG_6" class="circularG"></div>
-				<div id="circularG_7" class="circularG"></div>
-				<div id="circularG_8" class="circularG"></div>
+	<div id="wd-loader-wrapper">
+		<div class="wd-loader wd-loader--style-2">
+			<div class="wd-loader-content">
+				<span class="line line-1"></span>
+				<span class="line line-2"></span>
+				<span class="line line-3"></span>
+				<span class="line line-4"></span>
+				<span class="line line-5"></span>
+				<span class="line line-6"></span>
+				<span class="line line-7"></span>
+				<span class="line line-8"></span>
+				<span class="line line-9"></span>
+				<div><?php esc_html_e("Loading", 'feellio'); ?></div>
 			</div>
 		</div>
 	</div>

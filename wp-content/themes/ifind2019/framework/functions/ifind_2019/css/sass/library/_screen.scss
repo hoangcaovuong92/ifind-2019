@@ -1,0 +1,29 @@
+/// Manage responsive breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+/// Usage : @include breakpoint('min/max', 'smallest/mobile/tablet/desktop/largest') {}
+@mixin breakpoint($pre: 'min', $breakpoint: 'tablet') {
+	$breakpoint: "#{$pre}-#{$breakpoint}";
+    // If the key exists in the map
+	@if map-has-key($breakpoints, $breakpoint) {
+		$query: #{inspect(map-get($breakpoints, $breakpoint))};
+		// Prints a media query based on the value
+		@media #{$query}{
+			@content;
+		}
+	}
+}
+///Multiple breakpoint from min screen to max screen
+/// Usage : @include breakpoint_between('smallest/mobile/tablet/desktop/largest', 'smallest/mobile/tablet/desktop/largest') {}
+@mixin breakpoint_between($min: 'tablet', $max: 'desktop') {
+	$min: "min-#{$min}";
+	$max: "max-#{$max}";
+    // If the key exists in the map
+	@if map-has-key($breakpoints, $min) and map-has-key($breakpoints, $max) {
+		$query: "#{inspect(map-get($breakpoints, $min))} and #{inspect(map-get($breakpoints, $max))}"; 
+		// Prints a media query based on the value
+		@media #{$query}{
+			@content;
+		}
+	}
+}

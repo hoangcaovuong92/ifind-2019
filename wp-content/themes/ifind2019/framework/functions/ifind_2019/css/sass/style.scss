@@ -1,0 +1,142 @@
+/* Library */
+@import 'settings/setting';
+@import 'library/screen';
+@import 'library/functions';
+@import 'library/flex'; 
+@import 'library/css3';
+@import 'library/keyframes';
+@import 'page_loading';
+
+body{
+    font-family: "Work Sans","Helvetica Neue", Helvetica, sans-serif !important;
+}
+.ifind-2019-page{
+    .ifind-2019-wrapper{
+        height: 1920px;
+        //height: 100vh;
+        background-color: #ffffff;
+        color: #282828;
+        .wd-slider-wrap--main{
+            height: 100%;
+            .slick-prev:before, .slick-next:before{
+                color: #777777;
+            }
+            .slick-prev{
+                left: 11px;
+            }
+            .slick-next{
+                right: 11px;
+            }
+            h2{
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+            }
+        }
+        .ifind-2019-section-container{
+            padding: 30px 50px;
+        }
+        .ifind-2019-section--map{
+            .ifind-2019-map-image{
+                border-bottom: 5px solid #06334F;
+                padding-bottom: 45px;
+                margin-bottom: 45px;
+                position: relative;
+                .ifind-2019-map-main-image{
+                    width: 100%;
+                    z-index: 1;
+                }
+                #ifind-2019-map-mark{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    //display: none;
+                    z-index: 2;
+                }
+            }
+            .ifind-location-list{
+                @include flexbox;
+                @include flex-wrap(wrap);
+                border-bottom: 5px solid #06334F;
+                padding-bottom: 45px;
+                .ifind-location-item{
+                    width: 50%;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .ifind-2019-section--list{
+            .ifind-product-list{
+                @include flexbox;
+                @include flex-wrap(wrap);
+                margin: 0 -15px;
+                .ifind-product-item{
+                    width: calc(50% - 30px);
+                    margin: 0 15px 30px;
+                    position: relative;
+                    border: 1px solid #dddddd;
+                    @include box-shadow(0, 5px, 10px, rgba(#282828, 0.2));
+                    .ifind-product-item-thumbnail{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .ifind-product-item-view-album{
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        i:before{
+                            font-size: 30px;
+                        }
+                    }
+                    .ifind-product-item-time-open{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 3px 10px;
+                        font-size: 16px;
+                        background-color: yellow;
+                        text-transform: uppercase;
+                    }
+                    .ifind-product-item-content{
+                        @include flexbox;
+                        @include flex-wrap(wrap);
+                        @include justify-content(space-between);
+                        padding: 10px 20px;
+                        i {
+                            margin-right: 5px;
+                        }
+                        .ifind-product-item-type{
+                            width: 50%;
+                            font-size: 16px;
+                        }
+                        .ifind-product-item-owner{
+                            width: 50%;
+                            font-size: 16px;
+                            text-align: right;
+                        }
+                        .ifind-product-item-title{
+                            width: 100%;
+                            font-weight: bold;
+                        }
+                        .ifind-product-item-short-description{
+                            font-size: 18px;
+                            width: 50%;
+                        }
+                        .ifind-product-item-price{
+                            width: 50%;
+                            text-align: right;
+                            font-weight: bold;
+                        }
+                        .ifind-product-item-view-content{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

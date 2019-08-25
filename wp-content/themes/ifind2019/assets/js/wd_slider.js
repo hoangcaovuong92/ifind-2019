@@ -4,7 +4,7 @@
 jQuery(window).ready(function ($) {
 	"use strict";
 	//Blog related slider (template-parts/related.php)
-	ifind_big_popup_slider();
+	//ifind_big_popup_slider();
 });
 
 //****************************************************************//

@@ -6,8 +6,8 @@
  * -Email  : hoangcaovuong92@gmail.com.
  */
  
-if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
-	function tvlgiao_wpdance_get_theme_option_default_data(){
+if(!function_exists ('wd_get_theme_option_default_data')){
+	function wd_get_theme_option_default_data(){
 		return array(
 		    'google_map'       => array(
 		        'default'       => array(
@@ -30,8 +30,51 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 					'smallAutoplaySpeed' => 10000,
 					'numSliderBreak' 	=> 3,
 					'numFooterSliderItems'=> 1,
+					'column_mobile' => 1,
+					'column_tablet' => 1,
+					'column_desktop' => 1,
+					'autoplay' => 1,
+					'autoplay_mobile' => 0,
+					'autoplayHoverPause' => 1, //owl
+					'autoplaySpeed' => 20000, 
+					'autoplayTimeout' => 5000, //owl
+					'arrows' => 1,
+					'dots' => 0,
+					'infinite' => 1,
+					'responsiveRefreshRate' => 200,
+					'navRewind' => 0,
+					'navSpeed' => 1000,
+					'margin' => 30, //owl
+					'autoHeight' => 1, //owl
+					'mouseDrag' => 1, //owl
+					'touchDrag' => 1, //owl
+					'animateIn' => 0, //owl
+					'animateOut' => 0, //owl
 		        ),
-		    ),
+			),
+			'columns'  => array(
+				'choose'        	=>  array(
+					'desktop' => array(
+						'1' => esc_html__( '1 Column', 'feellio' ),
+						'2' => esc_html__( '2 Columns', 'feellio' ),
+						'3' => esc_html__( '3 Columns', 'feellio' ),
+						'4' => esc_html__( '4 Columns', 'feellio' ),
+						'6' => esc_html__( '6 Columns', 'feellio' ),
+					),
+					'tablet' => array(
+						'1' => esc_html__( '1 Column', 'feellio' ),
+						'2' => esc_html__( '2 Columns', 'feellio' ),
+						'3' => esc_html__( '3 Columns', 'feellio' ),
+					),
+					'mobile' => array(
+						'1' => esc_html__( '1 Column', 'feellio' ),
+						'2' => esc_html__( '2 Columns', 'feellio' ),
+					),
+				),
+		        'default'       => array(
+		        )
+			),
+			
 		);
 	}
 }

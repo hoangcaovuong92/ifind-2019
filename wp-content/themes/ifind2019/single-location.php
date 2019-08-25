@@ -6,14 +6,14 @@
  */
 
 get_header(); 	
-$post_ID		= tvlgiao_wpdance_get_post_by_global();
+$post_ID		= wd_get_post_by_global();
 
 /**
- * tvlgiao_wpdance_before_main_content hook.
+ * wd_before_main_content hook.
  *
- * @hooked tvlgiao_wpdance_content_before_main_content
+ * @hooked wd_content_before_main_content
  */
-do_action('tvlgiao_wpdance_before_main_content'); ?>
+do_action('wd_before_main_content'); ?>
 	<?php 
 	$location_meta_data = ifind_get_post_custom_metadata(get_the_ID(), 'location');
 	$location_lat = $location_meta_data['location_data']['lat'];
@@ -92,10 +92,10 @@ do_action('tvlgiao_wpdance_before_main_content'); ?>
 	</section>
 <?php 
 /**
- * tvlgiao_wpdance_after_main_content hook.
+ * wd_after_main_content hook.
  *
- * @hooked tvlgiao_wpdance_content_after_main_content
+ * @hooked wd_content_after_main_content
  */
-do_action('tvlgiao_wpdance_after_main_content'); ?>
+do_action('wd_after_main_content'); ?>
 
 <?php get_footer(); ?>

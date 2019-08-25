@@ -23,7 +23,7 @@ $list_business_location = ifind_get_list_business_location(get_the_ID());
     * var: zoom 	
     * var: time_set_map 	
     */
-    extract(tvlgiao_wpdance_get_data_package( 'google_map' )); 
+    extract(wd_get_data_package( 'google_map' )); 
     $google_map_url = "//maps.googleapis.com/maps/api/js";
     $google_map_url = add_query_arg( array(
         'key' => $api_key,
