@@ -68,74 +68,80 @@ body{
                 }
             }
         }
-        .ifind-2019-section--list{
-            .ifind-product-list{
-                @include flexbox;
-                @include flex-wrap(wrap);
-                margin: 0 -15px;
-                .ifind-product-item{
-                    width: calc(50% - 30px);
-                    margin: 0 15px 30px;
-                    position: relative;
-                    border: 1px solid #dddddd;
-                    @include box-shadow(0, 5px, 10px, rgba(#282828, 0.2));
-                    .ifind-product-item-thumbnail{
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .ifind-product-item-view-album{
-                        position: absolute;
-                        top: 5px;
-                        left: 5px;
-                        i:before{
-                            font-size: 30px;
-                        }
-                    }
-                    .ifind-product-item-time-open{
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        padding: 3px 10px;
-                        font-size: 16px;
-                        background-color: yellow;
-                        text-transform: uppercase;
-                    }
-                    .ifind-product-item-content{
-                        @include flexbox;
-                        @include flex-wrap(wrap);
-                        @include justify-content(space-between);
-                        padding: 10px 20px;
-                        i {
-                            margin-right: 5px;
-                        }
-                        .ifind-product-item-type{
-                            width: 50%;
-                            font-size: 16px;
-                        }
-                        .ifind-product-item-owner{
-                            width: 50%;
-                            font-size: 16px;
-                            text-align: right;
-                        }
-                        .ifind-product-item-title{
-                            width: 100%;
-                            font-weight: bold;
-                        }
-                        .ifind-product-item-short-description{
-                            font-size: 18px;
-                            width: 50%;
-                        }
-                        .ifind-product-item-price{
-                            width: 50%;
-                            text-align: right;
-                            font-weight: bold;
-                        }
-                        .ifind-product-item-view-content{
-                            font-weight: bold;
-                        }
-                    }
-                }
+        .ifind-2019-section--ads{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.ifind-product-list{
+    @include flexbox;
+    @include flex-wrap(wrap);
+    max-width: 100%;
+    //margin: 0 -15px;
+    padding: 20px 10px;
+    .ifind-product-item{
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+        position: relative;
+        border: 1px solid #dddddd;
+        @include box-shadow(0, 5px, 10px, rgba(#282828, 0.2));
+        .ifind-product-item-thumbnail{
+            img{
+                width: 100%;
+            }
+        }
+        .ifind-product-item-view-album{
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            i:before{
+                font-size: 30px;
+            }
+        }
+        .ifind-product-item-time-open{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 3px 10px;
+            font-size: 16px;
+            background-color: yellow;
+            text-transform: uppercase;
+        }
+        .ifind-product-item-content{
+            @include flexbox;
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            padding: 10px 20px;
+            i {
+                margin-right: 5px;
+            }
+            .ifind-product-item-type{
+                width: 50%;
+                font-size: 16px;
+            }
+            .ifind-product-item-owner{
+                width: 50%;
+                font-size: 16px;
+                text-align: right;
+            }
+            .ifind-product-item-title{
+                width: 100%;
+                font-weight: bold;
+            }
+            .ifind-product-item-short-description{
+                font-size: 18px;
+                width: 50%;
+            }
+            .ifind-product-item-price{
+                width: 50%;
+                text-align: right;
+                font-weight: bold;
+            }
+            .ifind-product-item-view-content{
+                font-weight: bold;
             }
         }
     }

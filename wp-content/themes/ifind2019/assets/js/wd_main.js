@@ -3,21 +3,21 @@
 //****************************************************************//
 jQuery(document).ready(function ($) {
 	"use strict";
-	ifind_reset_system();
+	//ifind_reset_system();
 	ifind_wow_js_script();
 	ifind_disabled_browser_action();
-	ifind_google_map_script();
-	ifind_business_tab_script();
-	ifind_fancybox_script();
-	ifind_preload_business_video();
-	ifind_validator_form();
-	ifind_contact_form();
-	ifind_form_directions();
+	//ifind_google_map_script();
+	//ifind_business_tab_script();
+	//ifind_fancybox_script();
+	//ifind_preload_business_video();
+	// ifind_validator_form();
+	// ifind_contact_form();
+	// ifind_form_directions();
 	ifind_add_class_to_body();
-	ifind_virtual_keyboard();
-	ifind_ajax_display_weather_today_info();
+	// ifind_virtual_keyboard();
+	// ifind_ajax_display_weather_today_info();
 	ifind_ajax_auto_reload_browser();
-	ifind_ajax_update_business_click_counter();
+	//ifind_ajax_update_business_click_counter();
 	ifind_tooltip();
 });
 

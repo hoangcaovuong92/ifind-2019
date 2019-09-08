@@ -23,6 +23,48 @@ if (typeof ifind_2019_script != 'function') {
 			jQuery('#ifind-2019-map-mark').animate({'top':top+'%', 'left': left+'%'});
 		});
 
+		jQuery(".ifind-fancybox-image").fancybox({
+			openEffect: 'fade',
+			closeEffect: 'fade',
+			margin: [0, 0, 0, 0],
+			padding: 7,
+			width: 1080,
+			height: 1920,
+			fitToView: false,
+			autoSize: false,
+			closeBtn: true,
+			arrows: false,
+			type: 'image',
+			onComplete: function () {},
+			beforeShow: function () {},
+			afterClose: function () {},
+			afterLoad: function () {
+			}
+		});
+
+		jQuery('.ifind-fancybox-listing').on('click', function (e) {
+			e.preventDefault();
+			var target_id = jQuery(this).data('target_id');
+			jQuery.fancybox('#ifind-second-page-content-'+target_id, {
+				openEffect: 'fade',
+				closeEffect: 'fade',
+				margin: [10, 10, 10, 10],
+				padding: 0,
+				width: 1040,
+				height: 1880,
+				fitToView: true,
+				autoSize: false,
+				closeBtn: false,
+				arrows: false,
+				onComplete: function () {},
+				beforeShow: function () {
+					//jQuery("body").css({'overflow-y':'hidden'});
+				},
+				afterLoad: function () {
+				}
+			});
+		});
+
 		jQuery('.ifind-product-item-view-album').on('click', function (e) {
 			e.preventDefault();
 			var top = jQuery(this).data('top');

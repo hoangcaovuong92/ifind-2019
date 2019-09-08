@@ -7,30 +7,6 @@ Redux::setSection( $opt_name, array(
     'icon'             => 'el el-fast-forward',
     'fields'     => array(
         array(
-            'id'       => 'wd_slider_column_desktop',
-            'type'     => 'button_set',
-            'title'    => __( 'Column On Desktop', 'feellio' ),
-            'desc'     => '',
-            'options'  => $wd_default_data['columns']['choose']['desktop'],
-            'default'  => $wd_default_data['slider']['default']['column_desktop'], 
-        ),
-        array(
-            'id'       => 'wd_slider_column_tablet',
-            'type'     => 'button_set',
-            'title'    => __( 'Column On Tablet', 'feellio' ),
-            'desc'     => '',
-            'options'  => $wd_default_data['columns']['choose']['tablet'],
-            'default'  => $wd_default_data['slider']['default']['column_tablet'], 
-        ),
-        array(
-            'id'       => 'wd_slider_column_mobile',
-            'type'     => 'button_set',
-            'title'    => __( 'Column On Mobile', 'feellio' ),
-            'desc'     => '',
-            'options'  => $wd_default_data['columns']['choose']['mobile'],
-            'default'  => $wd_default_data['slider']['default']['column_mobile'], 
-        ),
-        array(
             'id'       => 'wd_slider_autoplay',
             'type'     => 'switch',
             'title'    => __( 'Autoplay', 'feellio' ),

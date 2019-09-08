@@ -70,9 +70,8 @@ if (!class_exists('iFind2019_Content')) {
 
 		public function reorder_sections() {
 			return array(
-				'section_1',
-				'section_2',
-				'section_3'
+				'section_map',
+				'section_ads',
 			);
 		}
 		
@@ -95,7 +94,7 @@ if (!class_exists('iFind2019_Content')) {
 
 								ob_start();
 								switch ($section_id) {
-									case 'section_1': ?>
+									case 'section_map': ?>
 										<div class="ifind-2019-section ifind-2019-section--map">
 											<div class="ifind-2019-section-container">
 												<h2><?php echo $setting['title']; ?></h2>
@@ -118,49 +117,55 @@ if (!class_exists('iFind2019_Content')) {
 										</div>
 										<?php
 										break;
-									case 'section_2': ?>
-										<div class="ifind-2019-section ifind-2019-section--list wow bounceInRight">
-											<div class="ifind-2019-section-container">
-												<h2><?php echo $setting['title']; ?></h2>
-												<?php 
-												$posts = $this->get_news(-1, $setting['category']);
-												if (!empty($posts)) { ?>
-													<div class="ifind-product-list">
-														<?php foreach ($posts as $id => $post) { ?>
-														<div class="ifind-product-item">
-															<a data-product_id="<?php echo $id; ?>" class="ifind-product-item-view-album" data-toggle="tooltip" title="<?php esc_html_e( 'View Albums', 'ifind' ) ?>" href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a>
-															<div class="ifind-product-item-time-open"><?php echo $post['time_open']; ?></div>
-															<div class="ifind-product-item-thumbnail">
-																<img src="<?php echo esc_url($post['image']); ?>" alt="<?php echo esc_html($post['title']); ?>">
-															</div>
-															<div class="ifind-product-item-content">
-																<div class="ifind-product-item-type"><?php echo $post['type']; ?></div>
-																<div class="ifind-product-item-owner"><?php echo $post['owner']; ?></div>
-																<div class="ifind-product-item-title"><?php echo $post['title']; ?></div>
-																<div class="ifind-product-item-short-description"><?php echo $post['short_description']; ?></div>
-																<div class="ifind-product-item-price"><?php echo $post['price']; ?></div>
-																<a data-product_id="<?php echo $id; ?>" class="ifind-product-item-view-content" data-toggle="tooltip" title="<?php esc_html_e( 'Read Detail', 'ifind' ) ?>" href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <?php esc_html_e( 'Read Detail', 'ifind' ) ?></a>
-															</div>
-															<div id="ifind-product-item-popup-content-<?php echo $id; ?>" style="display: none;">
-																<?php echo $post['content']; ?>
-															</div>
-														</div>
-														<?php } ?>
-													</div>
-												<?php } ?>
-											</div>
-										</div>
-										<?php
-										break;
-									case 'section_3': ?>
+									case 'section_ads': ?>
 										<?php if (!empty($setting['images'])) { 
-											foreach ($setting['images'] as $ads) { ?>
-												<div class="ifind-2019-section ifind-2019-section--ads">
-													<img src="<?php echo esc_url($ads); ?>">
+											foreach ($setting['images'] as $key => $ads) {
+												$second_page_type = $ads['second_page_type'];
+												$fancybox_link = '';
+												if ($second_page_type == 'image') {
+													$fancybox_link = $ads['second_image'];
+												}elseif ($second_page_type == 'html'){
+													$fancybox_link = $ads['second_html'];
+												} ?>
+												<div class="ifind-2019-section ifind-2019-section--ads wow bounceInRight">
+													<a class="fancybox fancybox.iframe ifind-fancybox-<?php echo $second_page_type; ?>" 
+														data-target_id="<?php echo $key; ?>" 
+														href="<?php echo $fancybox_link; ?>" content="<p>">
+														<img src="<?php echo esc_url($ads['image']); ?>">
+													</a>
+													<?php if ($second_page_type == 'listing') { ?>
+														<div id="ifind-second-page-content-<?php echo $key; ?>" style="display: none;">
+															<?php 
+															$posts = $this->get_news(-1, $ads['second_listing']);
+															if (!empty($posts)) { ?>
+																<div class="ifind-product-list">
+																	<?php foreach ($posts as $id => $post) { ?>
+																	<div class="ifind-product-item">
+																		<a data-product_id="<?php echo $id; ?>" class="ifind-product-item-view-album" data-toggle="tooltip" title="<?php esc_html_e( 'View Albums', 'ifind' ) ?>" href=""><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+																		<div class="ifind-product-item-time-open"><?php echo $post['time_open']; ?></div>
+																		<div class="ifind-product-item-thumbnail">
+																			<img src="<?php echo esc_url($post['image']); ?>" alt="<?php echo esc_html($post['title']); ?>">
+																		</div>
+																		<div class="ifind-product-item-content">
+																			<div class="ifind-product-item-type"><?php echo $post['type']; ?></div>
+																			<div class="ifind-product-item-owner"><?php echo $post['owner']; ?></div>
+																			<div class="ifind-product-item-title"><?php echo $post['title']; ?></div>
+																			<div class="ifind-product-item-short-description"><?php echo $post['short_description']; ?></div>
+																			<div class="ifind-product-item-price"><?php echo $post['price']; ?></div>
+																			<a data-product_id="<?php echo $id; ?>" class="ifind-product-item-view-content" data-toggle="tooltip" title="<?php esc_html_e( 'Read Detail', 'ifind' ) ?>" href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <?php esc_html_e( 'Read Detail', 'ifind' ) ?></a>
+																		</div>
+																		<div id="ifind-product-item-popup-content-<?php echo $id; ?>" style="display: none;">
+																			<?php echo $post['content']; ?>
+																		</div>
+																	</div>
+																	<?php } ?>
+																</div>
+															<?php } ?>
+														</div>
+													<?php } ?>
 												</div>
 										<?php }
-										} ?>
-										<?php
+										}
 										break;
 								}
 							} ?>
@@ -174,19 +179,14 @@ if (!class_exists('iFind2019_Content')) {
 		
         public function get_settings(){
 			$settings = array(
-				'section_1' => array(
+				'section_map' => array(
 					'status' => get_field('map_status'),
 					'title' => get_field('map_title'),
 					'image' => get_field('map_image'),
 					'current_location' => get_field('map_current_location'),
 					'location' => get_field('map_location'),
 				),
-				'section_2' => array(
-					'status' => get_field('listing_status'),
-					'title' => get_field('listing_title'),
-					'category' => get_field('listing_category'),
-				),
-				'section_3' => array(
+				'section_ads' => array(
 					'status' => true,
 					'images' => get_field('ads_images'),
 				),
