@@ -128,6 +128,7 @@ if (!class_exists('iFind2019_Content')) {
 													$fancybox_link = $ads['second_html'];
 												} ?>
 												<div class="ifind-2019-section ifind-2019-section--ads wow bounceInRight">
+													<a href="#" class="button ifind-back-to-map">Back To Map</a>
 													<a class="fancybox fancybox.iframe ifind-fancybox-<?php echo $second_page_type; ?>" 
 														data-target_id="<?php echo $key; ?>" 
 														href="<?php echo $fancybox_link; ?>" content="<p>">

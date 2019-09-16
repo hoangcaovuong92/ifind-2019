@@ -23,6 +23,11 @@ if (typeof ifind_2019_script != 'function') {
 			jQuery('#ifind-2019-map-mark').animate({'top':top+'%', 'left': left+'%'});
 		});
 
+		jQuery('.ifind-back-to-map').on('click', function (e) {
+			e.preventDefault();
+			jQuery('.wd-slider-wrap--main').slick('slickGoTo', 0, true);
+		});
+
 		jQuery(".ifind-fancybox-image").fancybox({
 			openEffect: 'fade',
 			closeEffect: 'fade',
