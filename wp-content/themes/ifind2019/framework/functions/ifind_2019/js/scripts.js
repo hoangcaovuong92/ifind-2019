@@ -15,6 +15,9 @@ jQuery(window).ready(function($) {
 //****************************************************************//
 if (typeof ifind_2019_script != 'function') { 
 	function ifind_2019_script() {
+		var timer;
+		var timerShowPopup = option_object.ifind_slider_timerShowPopup; //time show large popup slider
+
 		jQuery('.ifind-location-item a').on('click', function (e) {
 			e.preventDefault();
 			var top = jQuery(this).data('top');
@@ -53,13 +56,13 @@ if (typeof ifind_2019_script != 'function') {
 			jQuery.fancybox('#ifind-second-page-content-'+target_id, {
 				openEffect: 'fade',
 				closeEffect: 'fade',
-				margin: [10, 10, 10, 10],
+				margin: [10, 0, 10, 0],
 				padding: 0,
 				width: 1040,
 				height: 1880,
 				fitToView: true,
 				autoSize: false,
-				closeBtn: false,
+				closeBtn: true,
 				arrows: false,
 				onComplete: function () {},
 				beforeShow: function () {
@@ -106,6 +109,13 @@ if (typeof ifind_2019_script != 'function') {
 				afterLoad: function () {
 				}
 			});
+		});
+
+		jQuery(document).on('mousemove touchstart click', function (event) {
+			if (timer) clearTimeout(timer);
+			timer = setTimeout(function () {
+				ifind_fancybox_close();
+			}, timerShowPopup);
 		});
 	}
 }

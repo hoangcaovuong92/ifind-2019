@@ -252,7 +252,7 @@ if (!class_exists('iFind2019_Content')) {
         //Enqueue Style And Script
 		public function enqueue_scripts(){
             if (is_page_template( $this->template_file )) {
-                global $wp_query;
+                global $wp_query, $wd_theme_options;
                 $ajax_object_vars = array(
                     'ajax_url' 		=> admin_url( 'admin-ajax.php' ),
                     'query_vars'	=> json_encode( $wp_query->query ),
@@ -263,6 +263,8 @@ if (!class_exists('iFind2019_Content')) {
                 wp_enqueue_script('yt-ifind-2019-js',  WD_THEME_URI . '/framework/functions/ifind_2019/js/scripts.js', array(), '1.3.3.10', true);
 				wp_localize_script('yt-ifind-2019-js', 	'ajax_object', $ajax_object_vars);
 				wp_localize_script('yt-ifind-2019-js', 	'slider_default_setting', $slider_default_setting);
+				wp_localize_script('yt-ifind-2019-js', 	'option_object', $wd_theme_options);
+
 			}
 			wp_enqueue_style('yt-ifind-2019-style', WD_THEME_URI . '/framework/functions/ifind_2019/css/style.css', array(), '1.3.3.10', 'all');
 		}
