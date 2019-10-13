@@ -35,7 +35,7 @@ if (!class_exists('WD_Slider')) {
 			add_filter( 'wd_filter_slider_control', array($this, 'slider_control' ), 10, 2);
 
 			//$responsive = apply_filters('wd_filter_data_slider_setting', array()); //Get list screen responsive size
-            add_filter('wd_filter_data_slider_setting', array($this, 'slider_default_settings'), 10, 2);
+			add_filter('wd_filter_data_slider_setting', array($this, 'slider_default_settings'), 10, 2);
 		}
 
 		// Slider Control HTML

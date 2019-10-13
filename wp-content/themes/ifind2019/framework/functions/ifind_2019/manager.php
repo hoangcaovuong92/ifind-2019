@@ -100,7 +100,12 @@ if (!class_exists('iFind2019_Content')) {
 												<h2><?php echo $setting['title']; ?></h2>
 												<div class="ifind-2019-map-image wow bounceInRight">
 													<img class="ifind-2019-map-main-image" src="<?php echo esc_url($setting['image']); ?>" alt="<?php echo esc_html($setting['title']); ?>">
-													<img id="ifind-2019-map-mark" style="top: <?php echo $setting['current_location']['top']; ?>%; left: <?php echo $setting['current_location']['left']; ?>%;" data-toggle="tooltip" title="<?php esc_html_e( 'You are here!', 'ifind' ) ?>" data-wow-iteration="200" class="wow bounce" data-wow-delay="1s" src="<?php echo WD_THEME_IMAGES.'/marker.png'; ?>" alt=""> 
+													<img data-current_location_top="<?php echo $setting['current_location']['top']; ?>" 
+														data-current_location_left="<?php echo $setting['current_location']['left']; ?>" 
+														id="ifind-2019-map-mark" 
+														style="top: <?php echo $setting['current_location']['top']; ?>%; left: <?php echo $setting['current_location']['left']; ?>%;" 
+														data-toggle="tooltip" title="<?php esc_html_e( 'You are here!', 'ifind' ) ?>" 
+														data-wow-iteration="200" class="wow bounce" data-wow-delay="1s" src="<?php echo WD_THEME_IMAGES.'/marker.png'; ?>" alt=""> 
 												</div>
 												<?php if (!empty($setting['location'])) { ?>
 													<div class="ifind-location-list wow bounceInRight">

@@ -1,13 +1,13 @@
 <?php 
 Redux::setSection( $opt_name, array(
     'title'            => __( 'Sliders Default', 'feellio' ),
-    'id'               => 'wd_slider',
+    'id'               => 'ifind_slider',
     'desc'             => __( 'Customize default arguments for slider (Owl Carousel).', 'feellio' ),
     'customizer_width' => '400px',
     'icon'             => 'el el-fast-forward',
     'fields'     => array(
         array(
-            'id'       => 'wd_slider_autoplay',
+            'id'       => 'ifind_slider_autoplay',
             'type'     => 'switch',
             'title'    => __( 'Autoplay', 'feellio' ),
             'subtitle' => '',
@@ -16,51 +16,51 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_autoplay_setting_section_start',
+            'id'       => 'ifind_slider_autoplay_setting_section_start',
              'type'     => 'section',
              'title'    => __( 'Autoplay Settings', 'feellio' ),
              'subtitle' => '',
              'indent'   => true,
-            'required' => array('wd_slider_autoplay','=', true ),
+            'required' => array('ifind_slider_autoplay','=', true ),
         ),
         /****************************/
             array(
-                'id'       => 'wd_slider_autoplay_hover_pause',
+                'id'       => 'ifind_slider_autoplay_hover_pause',
                 'type'     => 'switch',
                 'title'    => __( 'Autoplay Hover Pause', 'feellio' ),
                 'subtitle' => '',
                 'default'  => $wd_default_data['slider']['default']['autoplayHoverPause'],
                 'on'       => 'Show',
                 'off'      => 'Hide',
-                'required' => array('wd_slider_autoplay', '=', true),
+                'required' => array('ifind_slider_autoplay', '=', true),
             ),
             array(
-                'id'       => 'wd_slider_autoplay_speed',
+                'id'       => 'ifind_slider_autoplay_speed',
                 'type'     => 'text',
                 'title'    => __( 'Autoplay Speed (Unit: ms)', 'feellio' ),
                 'subtitle' => '',
                 'desc'     => '',
                 'default'  => $wd_default_data['slider']['default']['autoplaySpeed'],
-                'required' => array('wd_slider_autoplay', '=', true),
+                'required' => array('ifind_slider_autoplay', '=', true),
             ),
             array(
-                'id'       => 'wd_slider_autoplay_timeout',
+                'id'       => 'ifind_slider_autoplay_timeout',
                 'type'     => 'text',
                 'title'    => __( 'Autoplay Time Out (Unit: ms)', 'feellio' ),
                 'subtitle' => '',
                 'desc'     => '',
                 'default'  => $wd_default_data['slider']['default']['autoplayTimeout'],
-                'required' => array('wd_slider_autoplay', '=', true),
+                'required' => array('ifind_slider_autoplay', '=', true),
             ),
         /****************************/
         array(
-            'id'     => 'wd_slider_autoplay_setting_section_end',
+            'id'     => 'ifind_slider_autoplay_setting_section_end',
             'type'   => 'section',
             'indent' => false,
-            'required' => array('wd_slider_autoplay','=', true ),
+            'required' => array('ifind_slider_autoplay','=', true ),
         ),
         array(
-            'id'       => 'wd_slider_autoplay_mobile',
+            'id'       => 'ifind_slider_autoplay_mobile',
             'type'     => 'switch',
             'title'    => __( 'Autoplay Mobile', 'feellio' ),
             'subtitle' => '',
@@ -69,7 +69,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_arrows',
+            'id'       => 'ifind_slider_arrows',
             'type'     => 'switch',
             'title'    => __( 'Arrows', 'feellio' ),
             'subtitle' => '',
@@ -78,7 +78,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Hide',
         ),
         array(
-            'id'       => 'wd_slider_dots',
+            'id'       => 'ifind_slider_dots',
             'type'     => 'switch',
             'title'    => __( 'Dots', 'feellio' ),
             'subtitle' => '',
@@ -87,7 +87,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Hide',
         ),
         array(
-            'id'       => 'wd_slider_infinite',
+            'id'       => 'ifind_slider_infinite',
             'type'     => 'switch',
             'title'    => __( 'Infinite', 'feellio' ),
             'subtitle' => '',
@@ -96,16 +96,16 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_responsive_refresh_rate',
+            'id'       => 'ifind_slider_responsive_refresh_rate',
             'type'     => 'text',
             'title'    => __( 'Responsive Refresh Rate (Unit: ms)', 'feellio' ),
             'subtitle' => '',
             'desc'     => '',
             'default'  => $wd_default_data['slider']['default']['responsiveRefreshRate'],
-            'required' => array('wd_slider_autoplay', '=', true),
+            'required' => array('ifind_slider_autoplay', '=', true),
         ),
         array(
-            'id'       => 'wd_slider_nav_rewind',
+            'id'       => 'ifind_slider_nav_rewind',
             'type'     => 'switch',
             'title'    => __( 'Nav Rewind', 'feellio' ),
             'subtitle' => '',
@@ -114,7 +114,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_nav_speed',
+            'id'       => 'ifind_slider_nav_speed',
             'type'     => 'text',
             'title'    => __( 'Nav Speed (Unit: ms)', 'feellio' ),
             'subtitle' => '',
@@ -122,7 +122,7 @@ Redux::setSection( $opt_name, array(
             'default'  => $wd_default_data['slider']['default']['navSpeed'],
         ),
         array(
-            'id'       => 'wd_slider_margin',
+            'id'       => 'ifind_slider_margin',
             'type'     => 'text',
             'title'    => __( 'Margin (Unit: pixel)', 'feellio' ),
             'subtitle' => '',
@@ -130,7 +130,7 @@ Redux::setSection( $opt_name, array(
             'default'  => $wd_default_data['slider']['default']['margin'],
         ),
         array(
-            'id'       => 'wd_slider_auto_height',
+            'id'       => 'ifind_slider_auto_height',
             'type'     => 'switch',
             'title'    => __( 'Auto Height', 'feellio' ),
             'subtitle' => '',
@@ -139,7 +139,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_mouse_drag',
+            'id'       => 'ifind_slider_mouse_drag',
             'type'     => 'switch',
             'title'    => __( 'Mouse Drag', 'feellio' ),
             'subtitle' => '',
@@ -148,7 +148,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_touch_drag',
+            'id'       => 'ifind_slider_touch_drag',
             'type'     => 'switch',
             'title'    => __( 'Touch Drag', 'feellio' ),
             'subtitle' => '',
@@ -157,7 +157,7 @@ Redux::setSection( $opt_name, array(
             'off'      => 'Disable',
         ),
         array(
-            'id'       => 'wd_slider_animate_in',
+            'id'       => 'ifind_slider_animate_in',
             'type'     => 'text',
             'title'    => __( 'Animate In', 'feellio' ),
             'subtitle' => __( 'This effect is only activated on single column layout.', 'feellio' ),
@@ -165,7 +165,7 @@ Redux::setSection( $opt_name, array(
             'default'  => $wd_default_data['slider']['default']['animateIn'],
         ),
         array(
-            'id'       => 'wd_slider_animate_out',
+            'id'       => 'ifind_slider_animate_out',
             'type'     => 'text',
             'title'    => __( 'Animate Out', 'feellio' ),
             'subtitle' => __( 'This effect is only activated on single column layout.', 'feellio' ),
