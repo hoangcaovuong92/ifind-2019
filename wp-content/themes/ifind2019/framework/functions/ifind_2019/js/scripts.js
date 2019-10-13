@@ -122,7 +122,7 @@ if (typeof ifind_2019_script != 'function') {
 				jQuery('.wd-slider-wrap--main').slick('slickPlay');
 				jQuery('#ifind-2019-map-mark').animate({'top':jQuery('#ifind-2019-map-mark').data('current_location_top')+'%', 'left': jQuery('#ifind-2019-map-mark').data('current_location_left')+'%'});
 			}, timerShowPopup);
-		});
+		}); 
 	}
 }
 
