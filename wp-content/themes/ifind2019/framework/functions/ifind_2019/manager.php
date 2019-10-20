@@ -105,7 +105,7 @@ if (!class_exists('iFind2019_Content')) {
 														id="ifind-2019-map-mark" 
 														style="top: <?php echo $setting['current_location']['top']; ?>%; left: <?php echo $setting['current_location']['left']; ?>%;" 
 														data-toggle="tooltip" title="<?php esc_html_e( 'You are here!', 'ifind' ) ?>" 
-														data-wow-iteration="200" class="wow bounce" data-wow-delay="1s" src="<?php echo WD_THEME_IMAGES.'/marker.png'; ?>" alt=""> 
+														data-wow-iteration="infinite" class="wow bounce" data-wow-delay="1s" src="<?php echo WD_THEME_IMAGES.'/marker.png'; ?>" alt=""> 
 												</div>
 												<?php if (!empty($setting['location'])) { ?>
 													<div class="ifind-location-list wow bounceInRight">
@@ -133,7 +133,7 @@ if (!class_exists('iFind2019_Content')) {
 													$fancybox_link = $ads['second_html'];
 												} ?>
 												<div class="ifind-2019-section ifind-2019-section--ads wow bounceInRight">
-													<a href="#" class="button ifind-back-to-map">Back To Map</a>
+													<a href="#" class="button ifind-btn ifind-btn-back-to-map">Back To Map</a>
 													<a class="fancybox fancybox.iframe ifind-fancybox-<?php echo $second_page_type; ?>" 
 														data-target_id="<?php echo $key; ?>" 
 														href="<?php echo $fancybox_link; ?>" content="<p>">
@@ -141,6 +141,10 @@ if (!class_exists('iFind2019_Content')) {
 													</a>
 													<?php if ($second_page_type == 'listing') { ?>
 														<div id="ifind-second-page-content-<?php echo $key; ?>" style="display: none;">
+															<a href="#" class="button ifind-btn ifind-btn-contact" data-form_id="<?php echo $key; ?>">Contact</a>
+															<div id="ifind-contact-form-content-<?php echo $key; ?>" style="display: none;">
+																<?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]'); ?>
+															</div>
 															<?php 
 															$posts = $this->get_news(-1, $ads['second_listing']);
 															if (!empty($posts)) { ?>
@@ -158,7 +162,7 @@ if (!class_exists('iFind2019_Content')) {
 																			<div class="ifind-product-item-title"><?php echo $post['title']; ?></div>
 																			<div class="ifind-product-item-short-description"><?php echo $post['short_description']; ?></div>
 																			<div class="ifind-product-item-price"><?php echo $post['price']; ?></div>
-																			<a data-product_id="<?php echo $id; ?>" class="ifind-product-item-view-content" data-toggle="tooltip" title="<?php esc_html_e( 'Read Detail', 'ifind' ) ?>" href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <?php esc_html_e( 'Read Detail', 'ifind' ) ?></a>
+																			<a data-product_id="<?php echo $id; ?>" class="ifind-product-item-view-content" data-toggle="tooltip" title="<?php echo $post['content']; ?>" href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <?php esc_html_e( 'Read Detail', 'ifind' ) ?></a>
 																		</div>
 																		<div id="ifind-product-item-popup-content-<?php echo $id; ?>" style="display: none;">
 																			<?php echo $post['content']; ?>

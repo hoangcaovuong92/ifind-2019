@@ -22,10 +22,17 @@ body{
                 color: #777777;
             }
             .slick-prev{
-                left: 11px;
+                left: 20px;
             }
             .slick-next{
-                right: 11px;
+                right: 20px;
+            }
+            .slick-arrow{
+                width: 45px;
+                height: 45px;
+                &::before{
+                    font-size: 45px;
+                }
             }
             h2{
                 text-align: center;
@@ -35,7 +42,7 @@ body{
             }
         }
         .ifind-2019-section-container{
-            padding: 30px 50px;
+            padding: 30px 70px;
         }
         .ifind-2019-section--map{
             .ifind-2019-map-image{
@@ -76,8 +83,12 @@ body{
     }
 }
 
-.ifind-back-to-map{
-    position: fixed;
+.ifind-2019-section{
+    position: relative;
+}
+
+.ifind-btn{
+    position: absolute;
     background: rgba(255,105,30,1);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,105,30,1)), to(rgba(230,95,28,1)));
     background: -webkit-linear-gradient(rgba(255,105,30,1) 0%, rgba(230,95,28,1) 100%);
@@ -86,19 +97,30 @@ body{
     background: linear-gradient(rgba(255,105,30,1) 0%, rgba(230,95,28,1) 100%);
     text-align: center;
     color: white;
-    padding: 10px 20px;
+    padding: 0 10px;
     display: inline-block;
     border: 1px solid rgba(0,0,0,0.21);
     border-bottom: 4px solid rgba(0,0,0,0.21);
     border-radius: 4px;
     text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    z-index: 99;
 }
+
+.ifind-btn-back-to-map{
+    top: 10px;
+    right: 10px;
+}
+.ifind-btn-contact{
+    top: 10px;
+    left: 50px;
+}
+
 .ifind-product-list{
     @include flexbox;
     @include flex-wrap(wrap);
     max-width: 100%;
     //margin: 0 -15px;
-    padding: 20px 10px;
+    padding: 50px 10px 20px;
     .ifind-product-item{
         width: calc(50% - 30px);
         margin: 0 15px 30px;
@@ -111,6 +133,7 @@ body{
             }
         }
         .ifind-product-item-view-album{
+            display: none;
             position: absolute;
             bottom: 0px;
             right: 20px;
@@ -149,7 +172,7 @@ body{
                 font-weight: bold;
             }
             .ifind-product-item-short-description{
-                font-size: 18px;
+                font-size: 16px;
                 width: 50%;
             }
             .ifind-product-item-price{
@@ -159,7 +182,14 @@ body{
             }
             .ifind-product-item-view-content{
                 font-weight: bold;
+                width: 100%;
+                text-align: center;
             }
         }
     }
+}
+
+.fancybox-close{
+    top: 10px !important;
+    left: 10px !important;
 }

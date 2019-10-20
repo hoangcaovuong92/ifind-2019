@@ -20,15 +20,25 @@ if (typeof ifind_2019_script != 'function') {
 
 		jQuery('.ifind-location-item a').on('click', function (e) {
 			e.preventDefault();
-			var top = jQuery(this).data('top');
-			var left = jQuery(this).data('left');
+			$this = jQuery(this);
+			var top = $this.data('top');
+			var left = $this.data('left');
 			
 			jQuery('#ifind-2019-map-mark').animate({'top':top+'%', 'left': left+'%'});
+
+			setTimeout(function () {
+				$this.blur();
+			}, timerShowPopup);
 		});
 
-		jQuery('.ifind-back-to-map').on('click', function (e) {
+		jQuery('.ifind-btn-back-to-map').on('click', function (e) {
 			e.preventDefault();
 			jQuery('.wd-slider-wrap--main').slick('slickGoTo', 0, true);
+		});
+
+		jQuery('.ifind-btn-contact').on('click', function (e) {
+			e.preventDefault();
+			alert('under construction!');
 		});
 
 		jQuery(".ifind-fancybox-image").fancybox({
@@ -69,7 +79,6 @@ if (typeof ifind_2019_script != 'function') {
 					//jQuery("body").css({'overflow-y':'hidden'});
 				},
 				afterLoad: function () {
-
 					jQuery('.wd-slider-wrap--main').slick('slickPause');
 				}
 			});
@@ -86,33 +95,36 @@ if (typeof ifind_2019_script != 'function') {
 
 		jQuery('.ifind-product-item-view-content').on('click', function (e) {
 			e.preventDefault();
-			var id = jQuery(this).data('product_id');
-			jQuery.fancybox('#ifind-product-item-popup-content-'+id, {
-				openEffect: 'fade',
-				closeEffect: 'fade',
-				margin: [0, 0, 0, 0],
-				padding: 0,
-				width: 1080,
-				height: 1920,
-				fitToView: true,
-				autoSize: true,
-				closeBtn: false,
-				arrows: false,
-				helpers: {
-					overlay: {
-						// css: {
-						// 	'background': 'rgba(58, 42, 45, 0.8)'
-						// },
-					}
-				},
-				onComplete: function () {},
-				beforeShow: function () {
-					//jQuery("body").css({'overflow-y':'hidden'});
-				},
-				afterLoad: function () {
-					jQuery('.wd-slider-wrap--main').slick('slickPause');
-				}
-			});
+			etTimeout(function () {
+				jQuery(this).blur();
+			}, timerShowPopup);
+			// var id = jQuery(this).data('product_id');
+			// jQuery.fancybox('#ifind-product-item-popup-content-'+id, {
+			// 	openEffect: 'fade',
+			// 	closeEffect: 'fade',
+			// 	margin: [0, 0, 0, 0],
+			// 	padding: 0,
+			// 	width: 1080,
+			// 	height: 1920,
+			// 	fitToView: true,
+			// 	autoSize: true,
+			// 	closeBtn: false,
+			// 	arrows: false,
+			// 	helpers: {
+			// 		overlay: {
+			// 			// css: {
+			// 			// 	'background': 'rgba(58, 42, 45, 0.8)'
+			// 			// },
+			// 		}
+			// 	},
+			// 	onComplete: function () {},
+			// 	beforeShow: function () {
+			// 		//jQuery("body").css({'overflow-y':'hidden'});
+			// 	},
+			// 	afterLoad: function () {
+			// 		jQuery('.wd-slider-wrap--main').slick('slickPause');
+			// 	}
+			// });
 		});
 
 		jQuery(document).on('mousemove touchstart click', function (event) {
