@@ -142,6 +142,7 @@ if (!class_exists('iFind2019_Content')) {
 													<?php if ($second_page_type == 'listing') { ?>
 														<div id="ifind-second-page-content-<?php echo $key; ?>" style="display: none;">
 															<a href="#" class="button ifind-btn ifind-btn-contact" data-form_id="<?php echo $key; ?>">Contact</a>
+															<a href="#" class="button ifind-btn ifind-btn-back-to-map">Back To Map</a>
 															<div id="ifind-contact-form-content-<?php echo $key; ?>" style="display: none;">
 																<?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]'); ?>
 															</div>

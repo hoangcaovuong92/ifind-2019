@@ -33,6 +33,7 @@ if (typeof ifind_2019_script != 'function') {
 
 		jQuery('.ifind-btn-back-to-map').on('click', function (e) {
 			e.preventDefault();
+			ifind_fancybox_close();
 			jQuery('.wd-slider-wrap--main').slick('slickGoTo', 0, true);
 		});
 
